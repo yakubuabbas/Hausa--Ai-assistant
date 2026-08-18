@@ -4,30 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hausa AI Assistant</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <h1>Hausa AI Assistant</h1>
+
   <p>Maraba da zuwa Hausa AI Assistant.</p>
 
- <link rel="stylesheet" href="style.css"> <input type="text" id="question" placeholder="Rubuta tambayarka..." />
+  <input
+    type="text"
+    id="question"
+    placeholder="Rubuta tambayarka..."
+  >
+
   <button onclick="askAI()">Tambaya</button>
 
   <p id="answer"></p>
 
-  <script>
-    function askAI() {
-      const question = document.getElementById("question").value;
-
-      if (!question) {
-        document.getElementById("answer").innerText =
-          "Don Allah rubuta tambaya.";
-        return;
-      }
-
-      document.getElementById("answer").innerText =
-        "Hausa AI Assistant zai amsa: " + question;
-    }
-  </script><script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
